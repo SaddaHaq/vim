@@ -134,7 +134,7 @@ fieldset[disabled] .btn-primary.active {
 	border: 0px solid #f1c633;
     border-radius: 10px;
     color: #e2e2e2;
-	box-shadow: -15px 30px 7px #c2c2c2;
+	box-shadow: -2px 7px 7px #c2c2c2;
 	border: 1px solid #eee;
 }
 .btn-xl:hover,
@@ -202,7 +202,10 @@ fieldset[disabled] .btn-xl.active {
 	font-weight: 700;
 	color: #fff;
 }
-
+.navbar-default .navbar-brand img{
+    max-width: 40px;
+    display: inline-block;
+}
 .navbar-default .navbar-brand:hover,
 .navbar-default .navbar-brand:focus,
 .navbar-default .navbar-brand:active,
@@ -290,18 +293,33 @@ fieldset[disabled] .btn-xl.active {
         -moz-transition: all .3s;
         transition: all .3s;
     }
-
+    .navbar-default .navbar-brand img{
+        max-width: 56px;
+        display: inline-block;
+    }
+    .he-bg {
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 113.5%;
+        background: rgba(0,0,0,.25);
+    }
     .navbar-default .navbar-nav>.active>a {
         border-radius: 3px;
     }
 
     .navbar-default.navbar-shrink {
-        padding: 10px 0;
+        padding: 10px 0 !important;
         background-color: #222;
+    }
+    .navbar-default.navbar-shrink img{
+        max-width: 48px;
     }
 
     .navbar-default.navbar-shrink .navbar-brand {
         font-size: 1.5em;
+        padding-top: 8px;
     }
 }
 
@@ -361,7 +379,8 @@ header .intro-text .intro-heading {
         font-size: 75px;
         font-weight: 700;
         line-height: 75px;
-		text-shadow: -15px 30px 7px #c2c2c2;
+	/*text-shadow: -15px 30px 7px #c2c2c2;*/
+        text-shadow: -4px 3px 9px #616161;
     }
 }
 
@@ -737,4 +756,7 @@ img::-moz-selection {
 
 body {
     webkit-tap-highlight-color: #fed136;
+}
+.services{
+    
 }
